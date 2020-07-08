@@ -1,0 +1,849 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+/* import variables files */
+@import url(./partials/variables.css);
+
+
+/* logo particle animation */
+.animation{
+    position: relative;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: #4458dc;
+
+}
+.animation:before{
+    content: '';
+    position: absolute;
+    left: 45%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent 0%,#fff 5%,#fff 100%);
+    animation: animate 5.5s linear forwards;
+}
+@keyframes animate{
+    0%{
+        left: 95%;
+    }
+    50%{
+        left:-2%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+/*Start nav bar */
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding:0 3.5rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family:var(--roboto);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.5rem;
+    color:var(--title-color);
+
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*End navbar */
+
+/*start banner area*/
+.site-main .site-banner{
+    }
+
+.site-main .site-banner .site-title h3{
+
+    padding-top:35%;
+    font-weight:500;
+    font-size: 2.5rem;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+} 
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image>img{
+    padding: 7rem 0
+    width:90rem; 
+}
+
+.title-text{
+    font: normal bold 90px/72px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/*buttons style*/
+button{
+    padding:.8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color:whitesmoke;
+    transition:background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+
+}
+
+.button.primary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    right: -2px; bottom: -2px;
+    background: var(--gradient-color);
+    content: "";
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color:whitesmoke;
+    transition:background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.secondary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+
+}
+
+.button.secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    right: -2px; bottom: -2px;
+    background: var(--gradient-color);
+    content: "";
+    z-index: -1;
+    border-radius: 4px;
+}
+/*End banner area*/
+
+/*start about area*/
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+      letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+/*End about area */
+/*Start brand area*/
+.site-main .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+.site-main .brand-area.first-row.col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 120px;
+    height: 90px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+    width:60%
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform:scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover >img{
+    filter: brightness(0.15);
+
+}
+
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+.site-main .brand-area .experience-area span{
+    display: block;   
+}
+
+.site-main .brand-area .experience-area .years-area{
+    background:url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.site-main .brand-area .experience-area .bg-panel{
+    position: absolute;
+    left: -190px;top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+
+.site-main .brand-area .experience-area .years-area .years{
+    font:normal bold 84px/40px var(--roboto);
+    color: blueviolet;
+    z-index: 2;
+}
+
+.site-main .brand-area .experience-area .years-area h2 > span{
+    font:normal 600 22px/30px var(--roboto);
+}
+
+.site-main .brand-area .experience-area .call-area{
+    padding-left: 10  rem;
+}
+
+/*End brand area*/
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.site-main .section-title .op {
+    font-size: 35px;
+}
+.skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #45505b;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #f2f3f5;
+}
+
+.skills .progress-bar-html {
+  width: 100%;
+  height: 50px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-css {
+  width: 90%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-javascript {
+  width: 30%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-bootstrap {
+  width: 70%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-python {
+  width: 60%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-database {
+  width: 70%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-ps {
+  width: 55%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-java {
+  width: 75%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-ds{
+  width: 60%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+.skills .progress-bar-c {
+  width: 65%;
+  height: 10px;
+  transition: .9s;
+  background-color: #0563bb;
+}
+
+
+/* start service area*/
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .service-title{
+    padding: 0.14rem;
+}
+
+.site-main .services-area .service-title h1{
+    font-size: 35px;
+}
+
+.site-main > .services-area .services{
+    background:#F0FFFF;
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: transform .7s ease;
+    cursor: pointer;
+}
+
+.site-main > .services-area .services:hover{
+    box-shadow:var(--box-shadow);
+    transform: scale(1.1);
+}
+/* End service area*/
+
+/*start project area*/
+* Project Area */ 
+
+.site-main .project-area{
+    padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+
+
+/* End Project area*/
+/* About Me */ 
+
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+}
+
+.site-main .about-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.site-main .about-area .client .client-img{
+    padding: 2rem;
+}
+
+.site-main .about-area .client .about-client{
+    padding-top: 2rem;
+}
+
+.site-main .about-area .client .about-client h4{
+    font: normal 500 21px/ 20px var(--roboto);
+}
+
+.site-main .about-area .client .about-client p{
+    font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+/* End About Me */ 
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.site-main .section-title .fs{
+    font-size: 35px;
+
+}
+.contact .info {
+  border-top: 3px solid #854fee;
+  border-bottom: 3px solid #854fee;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #47b2e4;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #854fee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6182ba;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  border-top: 3px solid #854fee;
+  border-bottom: 3px solid #854fee;
+  padding: 30px;
+  background: #fff;
+  box-shadow:  0px 10px 30px rgba(57, 56, 61, 0.205);;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #47b2e4;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: var(--gradient-color);
+  box-shadow: var(--box-shadow);
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Footer Area */ 
+#footer {
+  font-size: 14px;
+  background:  var(--gradient-color);
+}
+
+#footer .footer-newsletter {
+  padding: 50px 0;
+  background: #f3f5fa;
+  text-align: center;
+  font-size: 15px;
+  color: #444444;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  color: #37517e;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #47b2e4;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #209dd8;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #fff;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #37517e;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Jost", sans-serif;
+  color: #5e5e5e;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #37517e;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #47b2e4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #47b2e4;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #47b2e4;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #209dd8;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+#footer .copyright {
+  float: left;
+}
+
+#footer .credits {
+  float: right;
+  font-size: 13px;
+}
+
+#footer .credits a {
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  #footer .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #footer .copyright, #footer .credits {
+    text-align: center;
+    float: none;
+  }
+  #footer .credits {
+    padding-top: 4px;
+  }
+}
+
+
+/* End Footer */ 
